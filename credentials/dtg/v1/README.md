@@ -29,6 +29,10 @@ Based on [Core Spec v0.3](https://github.com/trustoverip/dtgwg-cred-tf/blob/main
 
 ## VWC (Witness Credential)
 - Purpose: Third-party attestation that an edge was established under specific conditions.
-[witness-credential.json](witness-credential.json)
+- [witness-credential.json](witness-credential.json)
 - `did:cid:bagaaiera5i3lobqxncn25lxvqznfiak4gvujojpddjft6ub25ys7xbrbfc5a`
+
+## DTG Schema Pack
+- DID Group includes all of the above
+- `did:cid:bagaaiera3qko5a3y6w4bjvr3iedqjt5flkvqi4gm2ytjip3c2ix25hezflzq`
 
