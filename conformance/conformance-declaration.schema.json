@@ -1,14 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://example.invalid/schemas/conformance/conformance-declaration.schema.json",
+  "$id": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/schemas/v0.3.0/conformance/conformance-declaration.schema.json",
   "title": "Schema Implementer Conformance Declaration",
-  "description": "Machine-readable declaration of implementer conformance to one or more schema families and specific schema identifiers in this repository.",
+  "description": "Machine-readable declaration of implementer conformance to one or more schema families and specific schema identifiers in this repository. This version supports declaring assurance level and control IDs.",
   "type": "object",
   "additionalProperties": false,
   "required": [
     "declaration",
     "implementer",
-    "scope"
+    "scope",
+    "assurance"
   ],
   "properties": {
     "declaration": {
@@ -210,6 +211,34 @@
         "signature": {
           "type": "string",
           "description": "Optional detached signature or JWS."
+        }
+      }
+    },
+    "assurance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assurance_level",
+        "controls"
+      ],
+      "properties": {
+        "assurance_level": {
+          "type": "string",
+          "pattern": "^AL[1-4]$",
+          "description": "Declared assurance level for this conformance claim."
+        },
+        "controls": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^SC-[A-Z]+-[0-9]{2}$"
+          },
+          "description": "Control IDs claimed as implemented for this scope."
+        },
+        "control_matrix_ref": {
+          "type": "string",
+          "description": "Optional reference to a control-to-assurance matrix used for interpretation."
         }
       }
     }

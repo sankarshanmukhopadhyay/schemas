@@ -1,0 +1,45 @@
+{
+  "registry_version": "0.3.0",
+  "generated_at": "2026-02-21T00:00:00Z",
+  "assurance_levels": [
+    {
+      "id": "AL1",
+      "title": "Structural Conformance",
+      "summary": "Payloads validate against published schemas.",
+      "requirements": [
+        "Validate payloads against schemas."
+      ]
+    },
+    {
+      "id": "AL2",
+      "title": "Declared Conformance + Controls",
+      "summary": "Publish machine-readable conformance declaration and declare applicable controls.",
+      "requirements": [
+        "Publish a conformance declaration JSON.",
+        "Declare scope (families/schemas/roles).",
+        "Declare applicable controls and assurance level.",
+        "Validate declaration structure in CI or equivalent."
+      ]
+    },
+    {
+      "id": "AL3",
+      "title": "Evidence-backed Conformance",
+      "summary": "Conformance claims are supported by evidence references and integrity metadata.",
+      "requirements": [
+        "Meet all AL2 requirements.",
+        "Provide evidence references (tests, attestations, provenance).",
+        "Provide integrity metadata (hash/signature pointer, timestamps)."
+      ]
+    },
+    {
+      "id": "AL4",
+      "title": "Independently Assured Conformance",
+      "summary": "Independent review/audit of conformance claims and evidence.",
+      "requirements": [
+        "Meet all AL3 requirements.",
+        "Independent audit or review performed.",
+        "Document audit scope and outcomes."
+      ]
+    }
+  ]
+}

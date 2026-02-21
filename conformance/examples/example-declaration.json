@@ -45,5 +45,14 @@
   },
   "integrity": {
     "signed": false
+  },
+  "assurance": {
+    "assurance_level": "AL2",
+    "controls": [
+      "SC-CORE-01",
+      "SC-CORE-02",
+      "SC-CONF-01"
+    ],
+    "control_matrix_ref": "controls/mappings/control-assurance-matrix.json"
   }
 }

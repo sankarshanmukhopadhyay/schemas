@@ -73,3 +73,10 @@ The implementer affirms that this declaration is accurate to the best of their k
 - **Organization:** _<org>_
 - **Signature (optional):** _<signature>_
 - **Date (UTC):** _<YYYY-MM-DD>_
+
+
+## Assurance
+
+- **Assurance Level (AL1–AL4):** _e.g., AL2_
+- **Controls Implemented:** list control IDs (e.g., `SC-CORE-01`, `SC-CONF-01`) and any deviations.
+- **Control-to-Assurance Matrix Reference:** (optional) point to the matrix used for interpretation.

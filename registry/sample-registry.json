@@ -1,0 +1,30 @@
+{
+  "registry_version": "0.3.0",
+  "generated_at": "2026-02-21T00:00:00Z",
+  "entries": [
+    {
+      "implementer_id": "example.vendor.alpha",
+      "display_name": "Example Vendor Alpha",
+      "declaration": {
+        "url": "https://example.invalid/conformance/example.vendor.alpha/declaration.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "assurance_level": "AL2",
+      "controls": [
+        "SC-CORE-01",
+        "SC-CORE-02",
+        "SC-CONF-01"
+      ],
+      "scope": {
+        "schema_families": [
+          "dtg",
+          "agent"
+        ],
+        "roles": [
+          "issuer",
+          "verifier"
+        ]
+      }
+    }
+  ]
+}

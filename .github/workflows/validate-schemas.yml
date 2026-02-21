@@ -50,3 +50,28 @@ jobs:
           set -euo pipefail
           echo "== Validating controls registry =="
           ajv validate -s controls/controls.schema.json -d controls/controls.json --strict=false
+
+
+- name: Validate assurance registry
+  run: |
+    set -euo pipefail
+    echo "== Validating assurance registry =="
+    ajv validate -s assurance/assurance.schema.json -d assurance/assurance-levels.json --strict=false
+
+- name: Validate control-to-assurance matrix
+  run: |
+    set -euo pipefail
+    echo "== Validating control-to-assurance matrix =="
+    ajv validate -s controls/mappings/control-assurance-matrix.schema.json -d controls/mappings/control-assurance-matrix.json --strict=false
+
+- name: Validate registry simulation
+  run: |
+    set -euo pipefail
+    echo "== Validating registry simulation =="
+    ajv validate -s registry/registry.schema.json -d registry/sample-registry.json --strict=false
+
+- name: Lint schemas
+  run: |
+    set -euo pipefail
+    echo "== Linting schemas =="
+    node tools/lint-schemas.js

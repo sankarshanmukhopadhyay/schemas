@@ -7,6 +7,11 @@ All notable changes to this project will be documented in this file.
 ## [0.3.0] - Unreleased
 
 ### Added
+- Assurance levels registry (AL1–AL4) and schemas
+- Control-to-assurance matrix (machine-readable + validated)
+- Reference validation and linting tools
+- Minimal trust model document
+- Registry simulation artifacts
 - Controls Registry (controls.md + controls.json + schema) for control IDs and assurance mapping handles
 
 - Conformance artifacts: implementer declaration template, machine-readable declaration schema, and example declaration

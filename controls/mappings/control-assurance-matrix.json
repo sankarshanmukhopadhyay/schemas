@@ -1,0 +1,53 @@
+{
+  "matrix_version": "0.3.0",
+  "generated_at": "2026-02-21T00:00:00Z",
+  "levels": [
+    {
+      "assurance_level": "AL1",
+      "required_controls": [
+        "SC-CORE-01"
+      ],
+      "recommended_controls": [
+        "SC-CORE-02"
+      ]
+    },
+    {
+      "assurance_level": "AL2",
+      "required_controls": [
+        "SC-CORE-01",
+        "SC-CORE-02",
+        "SC-CONF-01"
+      ],
+      "recommended_controls": [
+        "SC-DTG-01",
+        "SC-AGENT-01",
+        "SC-REP-01"
+      ]
+    },
+    {
+      "assurance_level": "AL3",
+      "required_controls": [
+        "SC-CORE-01",
+        "SC-CORE-02",
+        "SC-CONF-01"
+      ],
+      "recommended_controls": [
+        "SC-DTG-02",
+        "SC-AGENT-02",
+        "SC-REP-02"
+      ]
+    },
+    {
+      "assurance_level": "AL4",
+      "required_controls": [
+        "SC-CORE-01",
+        "SC-CORE-02",
+        "SC-CONF-01"
+      ],
+      "recommended_controls": [
+        "SC-DTG-03",
+        "SC-AGENT-03"
+      ]
+    }
+  ]
+}

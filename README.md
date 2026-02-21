@@ -55,3 +55,30 @@ Implementers SHOULD:
 - Avoid referencing `main` for production validation.
 - Use `$id` as the canonical identifier for schema references once published via a stable hosting endpoint (e.g., GitHub Pages).
 
+
+## Assurance
+
+This repository defines **assurance levels** (AL1–AL4) to distinguish schema-validity from trust posture.
+
+- Human-readable: `assurance/assurance-levels.md`
+- Machine-readable: `assurance/assurance-levels.json` (validated by `assurance/assurance.schema.json`)
+
+## Control ↔ Assurance Mapping
+
+A control-to-assurance matrix defines required/recommended controls per level:
+
+- `controls/mappings/control-assurance-matrix.json`
+
+## Tools
+
+Reference scripts for implementers and CI parity:
+
+- `tools/validate-conformance.js` — validate conformance, controls, assurance, and registry simulation artifacts via AJV CLI
+- `tools/lint-schemas.js` — lightweight schema linting (identity + documentation hygiene)
+
+## Registry Simulation (Non-normative)
+
+Example artifacts showing how an ecosystem might index implementers and their declarations:
+
+- `registry/sample-registry.json`
+- `registry/registry.schema.json`
