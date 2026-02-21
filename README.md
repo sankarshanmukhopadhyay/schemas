@@ -20,6 +20,14 @@ This repository supports implementer-facing conformance artifacts to enable ecos
 Implementers SHOULD pin to a tagged release and reference schemas by `$id` where possible.
 
 
+## Controls
+
+This repository maintains a lightweight Controls Registry to support ecosystem conformance and assurance claims.
+
+- Human-readable registry: `controls/controls.md`
+- Machine-readable registry: `controls/controls.json`
+- Registry schema: `controls/controls.schema.json`
+
 ## Schema Versioning Policy
 
 This repository follows semantic governance for schema evolution.

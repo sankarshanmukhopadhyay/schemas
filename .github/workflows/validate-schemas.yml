@@ -44,3 +44,9 @@ jobs:
           set -euo pipefail
           echo "== Validating conformance declaration =="
           ajv validate -s conformance/conformance-declaration.schema.json -d conformance/examples/example-declaration.json --strict=false
+
+      - name: Validate controls registry
+        run: |
+          set -euo pipefail
+          echo "== Validating controls registry =="
+          ajv validate -s controls/controls.schema.json -d controls/controls.json --strict=false

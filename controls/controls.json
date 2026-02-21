@@ -1,0 +1,170 @@
+{
+  "registry_version": "0.1",
+  "generated_at": "2026-02-21",
+  "controls": [
+    {
+      "id": "SC-CORE-01",
+      "title": "Canonical schema identification",
+      "domain": "core",
+      "type": "governance",
+      "description": "Schemas declare $schema and stable $id identifiers to enable deterministic external referencing and toolchain resolution.",
+      "schema_paths": [
+        "credentials/**/v1/*.json"
+      ]
+    },
+    {
+      "id": "SC-CORE-02",
+      "title": "Example-backed validation discipline",
+      "domain": "core",
+      "type": "quality",
+      "description": "Each schema has a corresponding example payload that validates in CI, preventing regressions and ensuring implementer-ready samples.",
+      "schema_paths": [
+        "examples/**/v1/*.example.json",
+        ".github/workflows/validate-schemas.yml"
+      ]
+    },
+    {
+      "id": "SC-CONF-01",
+      "title": "Machine-readable conformance declaration",
+      "domain": "conformance",
+      "type": "governance",
+      "description": "Implementers can publish conformance claims in a structured JSON format validated by the repository schema.",
+      "schema_paths": [
+        "conformance/conformance-declaration.schema.json",
+        "conformance/examples/example-declaration.json"
+      ]
+    },
+    {
+      "id": "SC-DTG-01",
+      "title": "DTG endorsement credential",
+      "domain": "dtg",
+      "type": "schema",
+      "description": "Defines and constrains the DTG endorsement-credential credential structure for interoperable issuance and verification.",
+      "schema_paths": [
+        "credentials/dtg/v1/endorsement-credential.json",
+        "examples/dtg/v1/endorsement-credential.example.json"
+      ]
+    },
+    {
+      "id": "SC-DTG-02",
+      "title": "DTG invitation credential",
+      "domain": "dtg",
+      "type": "schema",
+      "description": "Defines and constrains the DTG invitation-credential credential structure for interoperable issuance and verification.",
+      "schema_paths": [
+        "credentials/dtg/v1/invitation-credential.json",
+        "examples/dtg/v1/invitation-credential.example.json"
+      ]
+    },
+    {
+      "id": "SC-DTG-03",
+      "title": "DTG membership credential",
+      "domain": "dtg",
+      "type": "schema",
+      "description": "Defines and constrains the DTG membership-credential credential structure for interoperable issuance and verification.",
+      "schema_paths": [
+        "credentials/dtg/v1/membership-credential.json",
+        "examples/dtg/v1/membership-credential.example.json"
+      ]
+    },
+    {
+      "id": "SC-DTG-04",
+      "title": "DTG persona credential",
+      "domain": "dtg",
+      "type": "schema",
+      "description": "Defines and constrains the DTG persona-credential credential structure for interoperable issuance and verification.",
+      "schema_paths": [
+        "credentials/dtg/v1/persona-credential.json",
+        "examples/dtg/v1/persona-credential.example.json"
+      ]
+    },
+    {
+      "id": "SC-DTG-05",
+      "title": "DTG relationship credential",
+      "domain": "dtg",
+      "type": "schema",
+      "description": "Defines and constrains the DTG relationship-credential credential structure for interoperable issuance and verification.",
+      "schema_paths": [
+        "credentials/dtg/v1/relationship-credential.json",
+        "examples/dtg/v1/relationship-credential.example.json"
+      ]
+    },
+    {
+      "id": "SC-DTG-06",
+      "title": "DTG witness credential",
+      "domain": "dtg",
+      "type": "schema",
+      "description": "Defines and constrains the DTG witness-credential credential structure for interoperable issuance and verification.",
+      "schema_paths": [
+        "credentials/dtg/v1/witness-credential.json",
+        "examples/dtg/v1/witness-credential.example.json"
+      ]
+    },
+    {
+      "id": "SC-AGENT-01",
+      "title": "Agent capability-attestation",
+      "domain": "agent",
+      "type": "schema",
+      "description": "Defines and constrains the Agent capability-attestation credential structure for interoperable issuance and verification.",
+      "schema_paths": [
+        "credentials/agent/v1/capability-attestation.json",
+        "examples/agent/v1/capability-attestation.example.json"
+      ]
+    },
+    {
+      "id": "SC-AGENT-02",
+      "title": "Agent collaboration-partner",
+      "domain": "agent",
+      "type": "schema",
+      "description": "Defines and constrains the Agent collaboration-partner credential structure for interoperable issuance and verification.",
+      "schema_paths": [
+        "credentials/agent/v1/collaboration-partner.json",
+        "examples/agent/v1/collaboration-partner.example.json"
+      ]
+    },
+    {
+      "id": "SC-AGENT-03",
+      "title": "Agent identity-link",
+      "domain": "agent",
+      "type": "schema",
+      "description": "Defines and constrains the Agent identity-link credential structure for interoperable issuance and verification.",
+      "schema_paths": [
+        "credentials/agent/v1/identity-link.json",
+        "examples/agent/v1/identity-link.example.json"
+      ]
+    },
+    {
+      "id": "SC-AGENT-04",
+      "title": "Agent infrastructure-authorization",
+      "domain": "agent",
+      "type": "schema",
+      "description": "Defines and constrains the Agent infrastructure-authorization credential structure for interoperable issuance and verification.",
+      "schema_paths": [
+        "credentials/agent/v1/infrastructure-authorization.json",
+        "examples/agent/v1/infrastructure-authorization.example.json"
+      ]
+    },
+    {
+      "id": "SC-REP-01",
+      "title": "Reputation reputation-credential",
+      "domain": "reputation",
+      "type": "schema",
+      "description": "Defines and constrains the Reputation reputation-credential artifact structure for interoperable consumption.",
+      "schema_paths": [
+        "credentials/reputation/v1/reputation-credential.json",
+        "examples/reputation/v1/reputation-credential.example.json"
+      ]
+    },
+    {
+      "id": "SC-REP-02",
+      "title": "Reputation reputation-profile",
+      "domain": "reputation",
+      "type": "schema",
+      "description": "Defines and constrains the Reputation reputation-profile artifact structure for interoperable consumption.",
+      "schema_paths": [
+        "credentials/reputation/v1/reputation-profile.json",
+        "examples/reputation/v1/reputation-profile.example.json"
+      ]
+    }
+  ]
+}
