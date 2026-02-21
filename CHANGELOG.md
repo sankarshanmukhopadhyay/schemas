@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [0.3.0] - Unreleased
+
+### Added
+- Conformance artifacts: implementer declaration template, machine-readable declaration schema, and example declaration
+- Non-normative trust assumptions / threat model document (`docs/TRUST-ASSUMPTIONS.md`)
+
+### Improved
+- Repository adoption readiness by enabling auditable conformance claims
+
+---
+
+
 ## [0.2.0] - 2026-02-21
 
 ### Added

@@ -1,0 +1,49 @@
+{
+  "declaration": {
+    "repository": "https://github.com/<org>/<repo>",
+    "release": "v0.3.0",
+    "declared_at": "2026-02-21",
+    "statement": "We implement issuer and verifier logic and claim conformance to the listed schemas as validated by our CI."
+  },
+  "implementer": {
+    "name": "Example Implementer Inc.",
+    "website": "https://example.com",
+    "contact": {
+      "person": "Engineering",
+      "email": "engineering@example.com"
+    }
+  },
+  "scope": {
+    "schema_families": [
+      "dtg",
+      "agent"
+    ],
+    "schemas": [
+      {
+        "id": "https://example.invalid/schemas/credentials/dtg/v1/persona-credential.json",
+        "path": "credentials/dtg/v1/persona-credential.json",
+        "notes": "Issuer & verifier tested."
+      },
+      {
+        "id": "https://example.invalid/schemas/credentials/agent/v1/capability-attestation.json",
+        "path": "credentials/agent/v1/capability-attestation.json"
+      }
+    ],
+    "roles": [
+      "issuer",
+      "verifier"
+    ]
+  },
+  "evidence": {
+    "tooling": "ajv-cli@5",
+    "ci_runs": [
+      "https://github.com/<org>/<repo>/actions/runs/<run-id>"
+    ],
+    "fixtures": [
+      "https://github.com/<org>/<repo>/tree/main/test-vectors"
+    ]
+  },
+  "integrity": {
+    "signed": false
+  }
+}

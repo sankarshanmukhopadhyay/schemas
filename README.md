@@ -9,6 +9,17 @@ Standard Archon schemas
 - Agent credential [schemas](credentials/agent/v1/README.md)
 - Decentralized Trust Graph (DTG) credential [schemas](credentials/dtg/v1/README.md)
 - Reputation credential [schemas](credentials/reputation/v1/README.md)
+## Conformance
+
+This repository supports implementer-facing conformance artifacts to enable ecosystem alignment and auditable interoperability claims.
+
+- Human-readable template: `conformance/IMPLEMENTER-DECLARATION.md`
+- Machine-readable declaration schema: `conformance/conformance-declaration.schema.json`
+- Example declaration: `conformance/examples/example-declaration.json`
+
+Implementers SHOULD pin to a tagged release and reference schemas by `$id` where possible.
+
+
 ## Schema Versioning Policy
 
 This repository follows semantic governance for schema evolution.

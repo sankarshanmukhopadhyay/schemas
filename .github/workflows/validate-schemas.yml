@@ -38,3 +38,9 @@ jobs:
               fi
             done
           done
+
+      - name: Validate conformance declaration example
+        run: |
+          set -euo pipefail
+          echo "== Validating conformance declaration =="
+          ajv validate -s conformance/conformance-declaration.schema.json -d conformance/examples/example-declaration.json --strict=false
