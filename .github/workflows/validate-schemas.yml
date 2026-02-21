@@ -1,4 +1,4 @@
-name: Validate JSON Schemas (DTG)
+name: Validate JSON Schemas
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 
 jobs:
-  validate-dtg-examples:
+  validate-examples:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,17 +20,21 @@ jobs:
       - name: Install AJV CLI
         run: npm install -g ajv-cli@5
 
-      - name: Validate DTG examples against DTG schemas
+      - name: Validate examples against schemas (DTG, Agent, Reputation)
         run: |
           set -euo pipefail
-          for f in credentials/dtg/v1/*-credential.json; do
-            base=$(basename "$f")
-            example="examples/dtg/v1/${base%.json}.example.json"
-            if [ -f "$example" ]; then
-              echo "Validating $example against $f"
-              ajv validate -s "$f" -d "$example" --strict=false
-            else
-              echo "WARN: no example found for $f (expected $example)"
-              exit 1
-            fi
+
+          for domain in dtg agent reputation; do
+            echo "== Validating domain: ${domain} =="
+            for f in credentials/${domain}/v1/*.json; do
+              base=$(basename "$f")
+              example="examples/${domain}/v1/${base%.json}.example.json"
+              if [ -f "$example" ]; then
+                echo "Validating $example against $f"
+                ajv validate -s "$f" -d "$example" --strict=false
+              else
+                echo "ERROR: no example found for $f (expected $example)"
+                exit 1
+              fi
+            done
           done

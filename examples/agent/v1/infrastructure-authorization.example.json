@@ -1,0 +1,7 @@
+{
+  "infrastructureType": "server",
+  "infrastructureId": "srv-001",
+  "role": "operator",
+  "signature": "base64url-signature-placeholder",
+  "signedMessage": "Authorize operator role for srv-001"
+}

@@ -1,0 +1,19 @@
+{
+  "domain": "agent:general",
+  "version": "1.0.0",
+  "description": "General-purpose reputation profile for agents.",
+  "metrics": {
+    "uptime": {
+      "type": "number",
+      "range": [
+        0,
+        100
+      ],
+      "unit": "percent",
+      "description": "Uptime percentage over the evaluation window."
+    }
+  },
+  "requiredMetrics": [
+    "uptime"
+  ]
+}
