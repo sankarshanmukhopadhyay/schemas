@@ -1,3 +1,8 @@
+## Upstream Origin
+
+This repository is forked from https://github.com/archetech/schemas.
+The project builds upon the original structure while evolving schema governance and validation practices to support Archon use cases.
+
 # schemas
 Standard Archon schemas
 
