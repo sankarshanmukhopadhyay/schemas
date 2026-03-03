@@ -1,5 +1,13 @@
 # Assurance Levels
 
+
+> **Normative Canonical Definition**
+>
+> This document is the **canonical** definition of Assurance Levels (AL1–AL4) for the broader ecosystem.
+> Downstream repositories (for example, DCAS and domain baselines such as Agent Name Assurance) **MUST reference** this document instead of copying AL semantics.
+>
+> **AL-Model-Version:** 1.0
+
 This repository distinguishes between **schema validity** and **trust posture**.
 
 A JSON document can be schema-valid while still being untrustworthy (wrong issuer, missing signatures, unverifiable provenance, etc.).
@@ -44,3 +52,10 @@ Assurance levels provide a shared language for implementers and ecosystem operat
 ## Notes
 - Assurance levels are **ecosystem agreements**, not cryptographic guarantees by themselves.
 - Ecosystems may profile or constrain these levels for specific trust networks.
+
+
+## Downstream use
+
+- **Schemas repo:** owns the canonical AL semantics.
+- **DCAS (dtg-conformance-assurance):** uses AL to parameterize evidence expectations and evaluation rigor.
+- **Agent Name Assurance Baseline (ANAB):** uses AL as the auditability axis alongside AN tiers and operational profiles.

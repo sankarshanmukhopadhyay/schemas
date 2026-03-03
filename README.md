@@ -9,6 +9,19 @@ Standard Archon schemas
 - Agent credential [schemas](credentials/agent/v1/README.md)
 - Decentralized Trust Graph (DTG) credential [schemas](credentials/dtg/v1/README.md)
 - Reputation credential [schemas](credentials/reputation/v1/README.md)
+## Ecosystem & related repositories
+
+This repository is part of a small assurance ecosystem:
+
+- **`schemas` (this repo):** canonical data contracts for credentials, controls, and machine-checkable declarations.
+- **DCAS (`dtg-conformance-assurance`):** the assurance method and verifier workflow that evaluates conformance claims built on these contracts.
+- **Domain baselines (example: `agent-name-assurance-baseline`):** normative requirements for specific domains that produce declarations and evidence bundles evaluable via DCAS.
+
+**Canonical ownership:** Assurance Levels (AL1–AL4) are defined *normatively* in `assurance/assurance-levels.md`. Downstream repos MUST reference this document instead of copying AL semantics.
+
+See also: `docs/cross-repo-governance.md`.
+
+
 ## Conformance
 
 This repository supports implementer-facing conformance artifacts to enable ecosystem alignment and auditable interoperability claims.
