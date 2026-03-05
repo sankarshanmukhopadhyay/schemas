@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.3.0
+
+- Add ecosystem interoperability documentation and upstream references (dtg-credentials, verifiable-trust-infrastructure, openVTC).
+- Add non-normative architecture diagram for cross-repo composition.
+
+
+
 All notable changes to this project will be documented in this file.
 
 ---
@@ -19,6 +26,17 @@ All notable changes to this project will be documented in this file.
 
 ### Improved
 - Repository adoption readiness by enabling auditable conformance claims
+
+---
+
+## [0.2.1] - 2026-03-05
+
+### Fixed
+- GitHub Actions schema validation workflow indentation so all validation steps execute reliably.
+
+### Changed
+- Removed stale macOS artifacts (e.g., `.DS_Store`).
+- Added `VERSION` file to make release pinning explicit in automation and downstream repos.
 
 ---
 

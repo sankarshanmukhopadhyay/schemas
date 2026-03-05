@@ -1,3 +1,9 @@
+## Schemas (Release v0.3.0)
+
+This repository publishes the canonical **data contracts** for the DTG assurance ecosystem.
+
+**Last reviewed:** 2026-03-05
+
 ## Upstream Origin
 
 This repository is forked from https://github.com/archetech/schemas.
@@ -95,3 +101,7 @@ Example artifacts showing how an ecosystem might index implementers and their de
 
 - `registry/sample-registry.json`
 - `registry/registry.schema.json`
+
+## Ecosystem interoperability
+
+See `docs/ecosystem-interoperability.md` and `docs/architecture.md` for how this repo composes with DTG Labs upstream work (`dtg-credentials`, `verifiable-trust-infrastructure`, `openVTC`).
