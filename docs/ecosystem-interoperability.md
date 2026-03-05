@@ -1,6 +1,6 @@
-# Ecosystem interoperability (pre-Phase 4)
+# Ecosystem interoperability
 
-This repo is designed to compose with upstream DTG Labs projects. The goal is **interoperability by construction**: clear role boundaries, explicit assumptions, and traceable artifacts.
+This repository is designed to compose with upstream DTG Labs projects. The objective is **interoperability by construction**: clear role boundaries, explicit assumptions, and traceable artifacts.
 
 ## Upstream projects in scope
 
@@ -10,7 +10,7 @@ This repo is designed to compose with upstream DTG Labs projects. The goal is **
 
 ## Compatibility model
 
-This repository provides the **assurance/conformance layer**. The upstream repos provide **ecosystem architecture + credential semantics + implementation surfaces**.
+This repository provides the **assurance and conformance layer**. The upstream repos provide **ecosystem architecture, credential semantics, and implementation surfaces**.
 
 ### What composes cleanly
 
@@ -24,6 +24,8 @@ This repository provides the **assurance/conformance layer**. The upstream repos
 - This repo does not attempt to be a certification program or an authority.
 - This repo does not ship production-grade infrastructure components (that’s where openVTC and VTI fit).
 
-## Next step
+## Transport alignment
 
-Phase 4 introduces transport alignment (TSP). These upstream repos do not force a redesign, but they provide the **realistic integration targets** that TSP should be validated against.
+Interoperability depends on a transport substrate for secure, privacy-preserving exchange of messages and artifacts between endpoints. This repo aligns with the **Trust Spanning Protocol (TSP)** from ToIP as a candidate transport layer for these exchanges.
+
+See: https://trustoverip.github.io/tswg-tsp-specification/

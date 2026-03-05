@@ -18,7 +18,7 @@ This document is a human-readable conformance declaration for implementers using
 The implementer declares conformance to one or more schema families and versions published in this repository, as scoped below.
 
 - **Repository:** _<repo url>_
-- **Release tag / version pinned:** _<e.g., v0.3.0>_
+- **Release tag / version pinned:** _<e.g., v0.4.0>_
 - **Declaration date (UTC):** _<YYYY-MM-DD>_
 
 ## 3. Conformance Scope

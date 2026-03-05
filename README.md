@@ -1,4 +1,4 @@
-## Schemas (Release v0.3.0)
+## Schemas (Release v0.4.0)
 
 This repository publishes the canonical **data contracts** for the DTG assurance ecosystem.
 

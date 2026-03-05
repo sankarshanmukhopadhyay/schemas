@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/schemas/v0.3.0/controls/mappings/control-assurance-matrix.schema.json",
+  "$id": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/schemas/v0.4.0/controls/mappings/control-assurance-matrix.schema.json",
   "title": "Control to Assurance Level Matrix",
   "description": "Defines which control IDs are required or recommended for each assurance level.",
   "type": "object",

@@ -1,7 +1,7 @@
 {
   "declaration": {
     "repository": "https://github.com/<org>/<repo>",
-    "release": "v0.3.0",
+    "release": "v0.4.0",
     "declared_at": "2026-02-21",
     "statement": "We implement issuer and verifier logic and claim conformance to the listed schemas as validated by our CI."
   },

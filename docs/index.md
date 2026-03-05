@@ -32,3 +32,9 @@ This repository can be published via **GitHub Pages** from the `/docs` folder.
   - `../upstream/verifiable-trust-infrastructure.md`
   - `../upstream/openvtc.md`
 
+## Interoperability
+
+- [Ecosystem interoperability](ecosystem-interoperability.md)
+- [Architecture snapshot](architecture.md)
+- [Transport alignment (TSP)](tsp-alignment.md)
+

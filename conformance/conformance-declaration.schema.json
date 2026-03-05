@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/schemas/v0.3.0/conformance/conformance-declaration.schema.json",
+  "$id": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/schemas/v0.4.0/conformance/conformance-declaration.schema.json",
   "title": "Schema Implementer Conformance Declaration",
   "description": "Machine-readable declaration of implementer conformance to one or more schema families and specific schema identifiers in this repository. This version supports declaring assurance level and control IDs.",
   "type": "object",
@@ -28,7 +28,7 @@
         },
         "release": {
           "type": "string",
-          "description": "Pinned release tag or version (e.g., v0.3.0)."
+          "description": "Pinned release tag or version (e.g., v0.4.0)."
         },
         "declared_at": {
           "type": "string",

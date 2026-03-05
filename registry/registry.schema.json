@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/schemas/v0.3.0/registry/registry.schema.json",
+  "$id": "https://raw.githubusercontent.com/sankarshanmukhopadhyay/schemas/v0.4.0/registry/registry.schema.json",
   "title": "Schema Implementer Registry (Simulation)",
   "description": "A non-normative example of how an ecosystem might index implementers and their conformance declarations.",
   "type": "object",
